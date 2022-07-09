@@ -1,30 +1,8 @@
 import Quote from "./components/Quote";
 import Footer from "./components/Footer";
+import { data } from "./data/data";
 
 function App() {
-  const data = [
-    {
-      name: "Tito Puente",
-      quote: "This is dope!",
-    },
-    {
-      name: "Tito Puente",
-      quote: "This is dope!",
-    },
-    {
-      name: "Tito Puente",
-      quote: "This is dope!",
-    },
-    {
-      name: "Tito Puente",
-      quote: "This is dope!",
-    },
-    {
-      name: "Tito Puente",
-      quote: "This is dope!",
-    },
-  ];
-
   return (
     <section>
       <div className="App">
