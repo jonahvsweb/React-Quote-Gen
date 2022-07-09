@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Quote from "./components/Quote";
 import Footer from "./components/Footer";
 import { data } from "./data/data";
+import "./styles/styles.css";
 
 function App() {
   const [quote, setQuote] = useState();
@@ -18,10 +19,16 @@ function App() {
   }, []);
 
   return (
-    <section>
-      <div className="App">
+    <section className="page">
+      <div className="container">
         <h1>Quote Generator</h1>
-        {isLoading ? <p>Quote is loading...</p> : <Quote data={quote} />}}
+        {isLoading ? (
+          <p className="loading">Quote is loading...</p>
+        ) : (
+          <div className="quote-container">
+            <Quote data={quote} />
+          </div>
+        )}
         <button onClick={randomize}>Generate quote</button>
       </div>
       <Footer />

@@ -2,7 +2,7 @@ const Quote = ({data}) => {
   return (
     <div>
       <blockquote>{data.quote}</blockquote>
-      <p>- {data.name}</p>
+      <p className="name">- {data.name}</p>
     </div>
   );
 };
